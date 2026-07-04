@@ -24,18 +24,20 @@ First launch pops a **setup window** — type your own subjects / exam dates
 
 ## Install — pick one
 
-**Needs Windows 10/11 + Python 3.11+** (uses only the standard library; the
-`tkinter` graphics ship inside the python.org installer — nothing else to
-install). Get Python from <https://www.python.org/downloads/windows/> and tick
-**"Add python.exe to PATH"**.
-
 **A · One-click (easiest, no terminal).** [Download the ZIP](../../archive/refs/heads/main.zip)
 → *Extract All* → **double-click `setup.bat`**. A menu finds Python (and offers
 to install it for you if missing), then launches the widgets, toggles Windows
 auto-start, or restarts them.
 
-**B · Terminal.** In the extracted folder, click the address bar, type `cmd`,
-Enter, then:
+**B · Terminal.** First install Python (`winget` ships with Windows 10/11 —
+skip this if you already have Python):
+
+```bat
+winget install -e --id Python.Python.3.12
+```
+
+**Close and reopen the terminal** so it picks up Python. Then, in the extracted
+folder (click the address bar, type `cmd`, Enter):
 
 ```bat
 pythonw study_logger\study_logger_widget.pyw
