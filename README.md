@@ -41,6 +41,22 @@ re-open that editor anytime with `--setup`.
 You don't need to know any Python. Three one-time steps, then you double-click
 a file.
 
+> ### ⚡ Quickest: double-click `setup.bat`
+>
+> After you've [downloaded the widgets](#2-download-these-widgets), just
+> **double-click `setup.bat`** in the main folder. A small menu opens and does
+> the whole thing for you:
+>
+> - **finds Python** — and offers to **install it for you** (via winget) if
+>   it's missing, so you can even skip step 1 below;
+> - **1** — launches both widgets (first run shows the setup popups);
+> - **2 / 3** — turns **auto-start on Windows** on or off (no manual shortcut
+>   fiddling);
+> - **4** — restarts both if one gets stuck;
+> - **5** — reopens the setup popups to change subjects / exams.
+>
+> The manual steps below are the same thing done by hand, if you'd rather.
+
 ### 1. Install Python (once, ~2 minutes)
 
 1. Go to **<https://www.python.org/downloads/windows/>** and download the
@@ -343,6 +359,7 @@ changelogs.
 
 | path | what |
 |---|---|
+| `setup.bat` + `setup.ps1` | one-click setup/launcher menu (find Python, launch, autostart on/off, restart, reconfigure) |
 | `study_logger/study_logger_widget.pyw` | the study logger widget (one file) |
 | `countdown/ca_countdown_widget.pyw` | the exam countdown widget (one file) |
 | `restart_widgets.pyw` | silent kill-and-relaunch for both |
