@@ -1,0 +1,10 @@
+# personal data + per-machine state (the widgets create these at runtime)
+study_log.jsonl
+widget_state.json
+active_session.json
+subjects.json
+countdown_config.json
+
+# python
+__pycache__/
+*.pyc
